@@ -1,0 +1,29 @@
+[project]
+name = 'Tokenized-Public-Service-Eligibility-Verification'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.citizen-identity]
+path = 'contracts/citizen-identity.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.documentation-verification]
+path = 'contracts/documentation-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.eligibility-criteria]
+path = 'contracts/eligibility-criteria.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
